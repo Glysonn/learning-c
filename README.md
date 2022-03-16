@@ -1,0 +1,1 @@
+Este é um repositório no qual eu colocarei as atividades da minha faculdade escritas na linguagem C.
