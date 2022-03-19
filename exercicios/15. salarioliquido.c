@@ -2,16 +2,24 @@
 
 int main(void)
 {
+    // declarando as variáveis.
     float valorHora, quantidadeHora, impostoRenda, inss, sindicato, salarioBruto, salarioLiqui;
+
+    // pedindo um input nas variáveis "quantidadeHora" e "valorHora" para calcular o salário bruto.
     printf("Quantas horas você trabalhou no mês?\n");
     scanf("%f", &quantidadeHora);
     printf("E quanto você recebe por hora trabalhada?\n");
     scanf("%f", &valorHora);
     salarioBruto = quantidadeHora * valorHora;
+
+    // calculando os descontos.
     impostoRenda = (salarioBruto / 100) * 11;
     inss = (salarioBruto / 100) * 8;
     sindicato = (salarioBruto / 100) * 5;
-    salarioLiqui = (salarioBruto - impostoRenda - inss - sindicato);
+    // calculando o salário líquido (diferença entre o salário bruto e a soma dos descontos)
+    salarioLiqui = salarioBruto - (impostoRenda + inss + sindicato);
+
+    // imprimindo o salário bruto, o valor de cada desconto e o salário líquido.
     printf("\n");
     printf("Salário bruto: R$%.2f\n", salarioBruto);
     printf("Desconto Imposto de Renda: R%.2f\n", impostoRenda);
