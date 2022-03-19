@@ -3,10 +3,10 @@
 
 int main(void)
 {
-    int numero = 0;
+    float numero = 0;
     printf("Por favor, digite um número:\n");
-    scanf("%d", &numero);
+    scanf("%f", &numero);
 
-    printf("O número informado foi: %d", numero);
+    printf("O número informado foi: %f", numero);
     return 0;
 }
